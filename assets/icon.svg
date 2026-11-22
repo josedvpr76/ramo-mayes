@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 320" width="260" height="320">
+  <defs>
+    <linearGradient id="foliageBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3c8d55" />
+      <stop offset="100%" stop-color="#1b4628" />
+    </linearGradient>
+
+    <linearGradient id="foliageMid" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e4d2b" />
+      <stop offset="65%" stop-color="#357a49" />
+      <stop offset="100%" stop-color="#52b36e" />
+    </linearGradient>
+
+    <linearGradient id="eucalyptusGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8ec4a8" />
+      <stop offset="60%" stop-color="#649e80" />
+      <stop offset="100%" stop-color="#3f6e56" />
+    </linearGradient>
+
+    <linearGradient id="wrapBack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9a679" />
+      <stop offset="100%" stop-color="#9e7b50" />
+    </linearGradient>
+
+    <linearGradient id="wrapFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edd4b2" />
+      <stop offset="55%" stop-color="#dcb98a" />
+      <stop offset="100%" stop-color="#b58d5d" />
+    </linearGradient>
+
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b85d3b" />
+      <stop offset="50%" stop-color="#d97954" />
+      <stop offset="100%" stop-color="#8c4125" />
+    </linearGradient>
+
+    <!-- Degradado para las flores solicitado -->
+    <linearGradient id="flowerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cd05b8" />
+      <stop offset="55%" stop-color="#cd05b8" />
+      <stop offset="100%" stop-color="#9c0694" />
+    </linearGradient>
+  </defs>
+
+  <!-- Envoltorio trasero -->
+  <polygon points="130,275 48,145 212,145" fill="url(#wrapBack)" />
+
+  <!-- Follaje trasero -->
+  <g id="foliage-back">
+    <path d="M 122 200 Q 82 135 52 78" stroke="#2d6a3e" stroke-width="3" stroke-linecap="round" fill="none" />
+    <ellipse cx="78" cy="132" rx="11" ry="20" transform="rotate(-38 78 132)" fill="url(#foliageBack)" />
+    <ellipse cx="96" cy="155" rx="10" ry="18" transform="rotate(28 96 155)" fill="url(#foliageBack)" />
+    <ellipse cx="62" cy="102" rx="10" ry="18" transform="rotate(-42 62 102)" fill="url(#foliageBack)" />
+    <ellipse cx="78" cy="112" rx="9" ry="16" transform="rotate(25 78 112)" fill="url(#foliageBack)" />
+
+    <path d="M 138 200 Q 178 135 208 78" stroke="#2d6a3e" stroke-width="3" stroke-linecap="round" fill="none" />
+    <ellipse cx="182" cy="132" rx="11" ry="20" transform="rotate(38 182 132)" fill="url(#foliageBack)" />
+    <ellipse cx="164" cy="155" rx="10" ry="18" transform="rotate(-28 164 155)" fill="url(#foliageBack)" />
+    <ellipse cx="198" cy="102" rx="10" ry="18" transform="rotate(42 198 102)" fill="url(#foliageBack)" />
+    <ellipse cx="182" cy="112" rx="9" ry="16" transform="rotate(-25 182 112)" fill="url(#foliageBack)" />
+  </g>
+
+  <!-- Follaje principal -->
+  <g id="foliage-main">
+    <path d="M 130 195 C 102 145, 106 85, 130 52 C 154 85, 158 145, 130 195 Z" fill="url(#foliageMid)" />
+    <path d="M 130 188 C 128 142, 129 95, 130 62" stroke="#6fd18a" stroke-width="1.2" stroke-opacity="0.45" fill="none" />
+
+    <path d="M 124 205 C 76 185, 42 138, 56 96 C 88 118, 112 158, 124 205 Z" fill="url(#eucalyptusGrad)" />
+    <path d="M 120 198 C 92 162, 72 130, 60 104" stroke="#b5dec9" stroke-width="1" stroke-opacity="0.45" fill="none" />
+
+    <path d="M 136 205 C 184 185, 218 138, 204 96 C 172 118, 148 158, 136 205 Z" fill="url(#eucalyptusGrad)" />
+    <path d="M 140 198 C 168 162, 188 130, 200 104" stroke="#b5dec9" stroke-width="1" stroke-opacity="0.45" fill="none" />
+
+    <path d="M 126 212 C 92 196, 72 162, 82 128 C 105 148, 118 178, 126 212 Z" fill="url(#foliageMid)" />
+    <path d="M 134 212 C 168 196, 188 162, 178 128 C 155 148, 142 178, 134 212 Z" fill="url(#foliageMid)" />
+  </g>
+
+  <!-- Flores agregadas -->
+  <g id="flowers">
+    <!-- Flor 1: Centro superior -->
+    <g transform="translate(130, 65)">
+      <g fill="url(#flowerGrad)">
+        <ellipse cx="0" cy="-8" rx="6" ry="10" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(72)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(144)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(216)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#ffe066" />
+    </g>
+
+    <!-- Flor 2: Izquierda -->
+    <g transform="translate(82, 105) scale(0.9)">
+      <g fill="url(#flowerGrad)">
+        <ellipse cx="0" cy="-8" rx="6" ry="10" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(72)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(144)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(216)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#ffe066" />
+    </g>
+
+    <!-- Flor 3: Derecha -->
+    <g transform="translate(178, 90) scale(0.95)">
+      <g fill="url(#flowerGrad)">
+        <ellipse cx="0" cy="-8" rx="6" ry="10" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(72)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(144)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(216)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#ffe066" />
+    </g>
+
+    <!-- Flor 4: Inferior izquierda -->
+    <g transform="translate(105, 145) scale(0.85)">
+      <g fill="url(#flowerGrad)">
+        <ellipse cx="0" cy="-8" rx="6" ry="10" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(72)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(144)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(216)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#ffe066" />
+    </g>
+
+    <!-- Flor 5: Inferior derecha -->
+    <g transform="translate(160, 130) scale(0.8)">
+      <g fill="url(#flowerGrad)">
+        <ellipse cx="0" cy="-8" rx="6" ry="10" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(72)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(144)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(216)" />
+        <ellipse cx="0" cy="-8" rx="6" ry="10" transform="rotate(288)" />
+      </g>
+      <circle cx="0" cy="0" r="4" fill="#ffe066" />
+    </g>
+    
+    <!-- Capullos para mayor realismo y detalle -->
+    <g transform="translate(65, 85) scale(0.6)">
+      <circle cx="0" cy="0" r="8" fill="url(#flowerGrad)" />
+      <circle cx="0" cy="0" r="3" fill="#ffe066" />
+    </g>
+    <g transform="translate(195, 115) scale(0.55)">
+      <circle cx="0" cy="0" r="8" fill="url(#flowerGrad)" />
+      <circle cx="0" cy="0" r="3" fill="#ffe066" />
+    </g>
+  </g>
+
+  <!-- Envoltorio frontal -->
+  <path d="M 52 162 L 130 278 L 208 162 C 180 185, 152 196, 130 196 C 108 196, 80 185, 52 162 Z" fill="url(#wrapFront)" />
+  <line x1="130" y1="196" x2="130" y2="278" stroke="#a67d4c" stroke-width="1.2" stroke-opacity="0.45" />
+
+  <!-- Lazo -->
+  <g id="ribbon">
+    <path d="M 124 222 L 106 256 L 116 253 L 122 262 L 130 225 Z" fill="url(#ribbonGrad)" />
+    <path d="M 136 222 L 154 256 L 144 253 L 138 262 L 130 225 Z" fill="url(#ribbonGrad)" />
+
+    <path d="M 126 218 C 106 204, 92 214, 98 225 C 104 233, 118 227, 126 221 Z" fill="url(#ribbonGrad)" />
+    <path d="M 134 218 C 154 204, 168 214, 162 225 C 156 233, 142 227, 134 221 Z" fill="url(#ribbonGrad)" />
+
+    <rect x="124" y="214" width="12" height="12" rx="3" fill="url(#ribbonGrad)" />
+  </g>
+</svg>

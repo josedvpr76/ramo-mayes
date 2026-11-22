@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(245, 173, 241);
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.ramo {
+    --s: min(94vw, calc(100vh - 130px), 700px);
+    --s: min(94vw, calc(100dvh - 130px), 700px);
+    position: relative;
+    width: var(--s);
+    height: var(--s);
+    flex-shrink: 0;
+}
+.ramo img {
+    position: absolute;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    z-index: 0;
+}
+.ramo img:nth-child(1)  { top: 9%; left: 40%; }
+.ramo img:nth-child(2)  { top: 4%; left: 10%; }
+.ramo img:nth-child(3)  { top: 4%; right: 20%; }
+.ramo img:nth-child(4)  { top: 4%; left: 20%; }
+.ramo img:nth-child(5)  { top: 4%; right: 25%; }
+.ramo img:nth-child(6)  { top: 9%; right: 35%; }
+.ramo img:nth-child(7)  { top: 5%; left: 35%; }
+.ramo img:nth-child(8)  { top: 5%; left: 45%; }
+.ramo img:nth-child(9)  { top: 7%; left: 50%; }
+.ramo img:nth-child(10) { top: 9%; left: 5%; }
+.ramo img:nth-of-type(11) {
+    width: 86%;
+    left: 53%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.ramo h1 {
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    font-size: calc(var(--s) * 0.086);
+    line-height: 1;
+    animation: latido 2s infinite;
+}
+@keyframes latido {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+}
+.mensaje {
+    width: 90%;
+    max-width: 800px;
+    min-height: 90px;
+    text-align: center;
+    font-size: clamp(18px, 4.5vw, 30px);
+    z-index: 5;
+}
+.mensaje p {
+    margin: 0;
+    min-height: 40px;
+}
+
+/*Hoja de estilos creado por JoseOrtiz*/

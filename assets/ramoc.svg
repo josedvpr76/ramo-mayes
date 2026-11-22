@@ -1,0 +1,92 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 600 700"
+     width="600" height="700">
+
+  <defs>
+    <linearGradient id="papel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ed75a9"/>
+      <stop offset="0.5" stop-color="#ffd5e8"/>
+      <stop offset="1" stop-color="#e96b9f"/>
+    </linearGradient>
+
+    <linearGradient id="pliegue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0f7"/>
+      <stop offset="1" stop-color="#f28bb8"/>
+    </linearGradient>
+
+    <linearGradient id="lazo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff91c2"/>
+      <stop offset="1" stop-color="#d82c79"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Papel principal -->
+  <path d="M300 590
+    C230 490 75 400 35 235
+    C100 215 140 250 175 205
+    C210 160 245 195 300 125
+    C355 195 390 160 425 205
+    C460 250 500 215 565 235
+    C525 400 370 490 300 590Z"
+    fill="url(#papel)" stroke="#d94d8b" stroke-width="5"/>
+
+  <!-- Pliegues laterales -->
+  <path d="M300 590 C180 430 100 330 35 235
+    C125 290 190 360 300 590Z"
+    fill="#f18bb7" opacity=".65"/>
+
+  <path d="M300 590 C420 430 500 330 565 235
+    C475 290 410 360 300 590Z"
+    fill="#ed78a9" opacity=".65"/>
+
+  <path d="M300 590 C250 410 205 300 175 205
+    C270 320 280 440 300 590Z"
+    fill="url(#pliegue)" opacity=".65"/>
+
+  <path d="M300 590 C350 410 395 300 425 205
+    C330 320 320 440 300 590Z"
+    fill="#fff0f7" opacity=".5"/>
+
+  <!-- Borde superior -->
+  <path d="M35 235
+    C100 215 140 250 175 205
+    C210 160 245 195 300 125
+    C355 195 390 160 425 205
+    C460 250 500 215 565 235"
+    fill="none" stroke="#ffb5d5" stroke-width="8"/>
+
+  <!-- Parte inferior del papel -->
+  <path d="M235 540 L195 665 L290 620
+    L300 590Z"
+    fill="#f58bb7" stroke="#d94d8b" stroke-width="4"/>
+
+  <path d="M365 540 L405 665 L310 620
+    L300 590Z"
+    fill="#f58bb7" stroke="#d94d8b" stroke-width="4"/>
+
+  <!-- Lazo izquierdo -->
+  <path d="M300 600
+    C230 520 155 540 165 600
+    C175 650 245 635 300 615Z"
+    fill="url(#lazo)" stroke="#c52c70" stroke-width="5"/>
+
+  <!-- Lazo derecho -->
+  <path d="M300 600
+    C370 520 445 540 435 600
+    C425 650 355 635 300 615Z"
+    fill="url(#lazo)" stroke="#c52c70" stroke-width="5"/>
+
+  <!-- Centro del lazo -->
+  <path d="M275 580 Q300 560 325 580
+    L320 625 Q300 645 280 625Z"
+    fill="#f75b9d" stroke="#c52c70" stroke-width="5"/>
+
+  <!-- Cintas -->
+  <path d="M285 625 L245 690 L300 665 L310 625Z"
+    fill="#e84a8c" stroke="#c52c70" stroke-width="4"/>
+
+  <path d="M315 625 L355 690 L300 665 L290 625Z"
+    fill="#e84a8c" stroke="#c52c70" stroke-width="4"/>
+
+</svg>
